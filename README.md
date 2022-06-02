@@ -1,21 +1,16 @@
 # IOBuilders challenge
 
-For learning purposes I have added more functionality to the challenge, I hope this was not a bad decision.
+For learning purposes I have added more functionalities to the challenge, I hope this was not a bad decision.
 
 ## Note 
 
 I have tried to develop this challenge following the concepts of "Clean Architecture":
 
 * Independent from database
-
 * Easy to test
-
 * Isolated from frameworks
-
 * All the business logic is found in the use cases, not spread everywhere
-
 * Easy to deploy because leaves the configuration for the last
-
 * Each use case involves different tasks
 
 I've tried also use SOLID principles to reach the actual clean architecture design pattern. Overall there is the use of
@@ -109,7 +104,7 @@ Sample response:
 ```json
 {
     "balance": 0,
-    "name": "cartera1",
+    "name": "wallet",
     "id": 1
 }
 ```
@@ -134,7 +129,7 @@ Sample response:
 ```json
 {
     "balance": 0,
-    "name": "cartera1",
+    "name": "wallet",
     "id": 1
 }
 ```
@@ -267,6 +262,8 @@ Headers
 |---|----------|
 |token| **Required** jwtoken |
 
+Sample response
+`STATUS 200 OK`
 
 #### Deposit amount
 
@@ -278,6 +275,7 @@ Headers
 | :-------- | :------- | :------------------------- |
 | `amount` | `number` | **Required**. amount     |
 
- 
+ Sample response
+ `STATUS 200 OK`
  
 
